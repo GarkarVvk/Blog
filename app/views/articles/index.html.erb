@@ -1,0 +1,29 @@
+<nav class="navbar navbar-light bg-dark">
+  <span class="navbar-text">
+  <h1 style="color: #000000;">Free Rails Blog</h1>
+  </span>
+</nav>
+
+</br>
+<center><h3><b>Articles</b></h3></center>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Title</th>
+      <th scope="col">Body</th>
+    </tr>
+  </thead>
+  <tbody>
+    <ul>
+      <% @articles.each do |article| %>
+        <tr>
+          <th scope="row">1</th>
+          <td><%= article.title %></td>
+          <td><%= article.body %></td>
+        </tr>
+      <% end %>
+    </ul>
+  </tbody>
+</table>
